@@ -71,6 +71,20 @@ body {
 	float: left;
 	margin: 10px;
 }
+.solucion {
+	float: left;
+	background-color: #3C3450;
+	width: 100%;
+	border-radius: 23px;
+	padding: 30px;
+	margin: 10px;
+}
+.codigo {
+	width: 100%;
+	background-color: Black;
+	color: #36E131;
+	padding: 10px;
+}
 .contacto {
 	float: left;
 	background-color: #3C3450;
