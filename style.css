@@ -13,7 +13,7 @@ a:link {
 	text-decoration: none;
 }
 a:visited {
-	color: Blue;
+	color: #ACBBBE;
 	background-color: transparent;
 	text-decoration: none;
 }
@@ -47,65 +47,27 @@ a:active{
 	float: left;
 	width: 30%;
 }
-.enlaces h2 {
+
+.enlaces h2{
 	text-align: center;
 }
-.principal {
-	float: left;
-	width: 65%;
+
+.box {
 	margin: 10px;
-	background-color: #3C3450;
-	padding: 30px;
-	border-radius: 23px;
-}
-.dedicacion {
 	float: left;
-	background-color: #3C3450;
-	margin: 10px;
-	padding: 30px;
-	border-radius: 23px;
 	width: 100%;
+	background-color: #3C3450;
+	padding: 30px;
+	border-radius: 23px;
 }
 
-.historia {
-	margin: 10px;
-	float: left;
-	width: 100%;
-	background-color: #3C3450;
-	padding: 30px;
-	border-radius: 23px;
-}
-.desafios {
-	float: left;
-	margin: 10px;
-	width: 100%;
-	background-color: #3C3450;
-	padding: 30px;
-	border-radius: 23px;
-}
-#especialidades {
-	width: 100%;
-	background-color: #3C3450;
-	padding: 30px;
-	border-radius: 23px;
-	float: left;
-	margin: 10px;
-}
-#solucion {
-	float: left;
-	background-color: #3C3450;
-	width: 100%;
-	border-radius: 23px;
-	padding: 30px;
-	margin: 10px;
-}
 .codigo {
 	width: 100%;
 	background-color: Black;
 	color: #36E131;
 	padding: 10px;
 }
-.contacto {
+.footer {
 	float: left;
 	background-color: #3C3450;
 	width: 100%;

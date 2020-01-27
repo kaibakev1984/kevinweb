@@ -11,7 +11,7 @@
 		<h1>Do it simple, idiot!</h1>
 	</div>
 	<div class="enlaces">
-		<h2>ïndice</h2>
+		<h2>Índice</h2>
 		<ul style="list-style-type: none;">
 			<li>
 				<a href="#">¿A qué me dedico?</a>
@@ -25,32 +25,31 @@
 			<li>
 				<a href="#">Desafíos</a>
 			</li>
-			<li>
-				<a href="#">¿Cómo contactarme?</a>
-			</li>
 			<li><a href="#solucion">Creando repositorio remoto</a></li>
+			<li><a href="#sublime">Color Picker no abre en Linux</a></li>
+			<li><a href="#contacto">¿Cómo contactarme?</a></li>
 		</ul>
 	</div>
-	<div class="principal">
+	<div class="box">
 		<h2>¿Quién soy?</h2>
 		<p>Soy un estudiante de ingeniería en tercer año de la carrera, y autodidacta en ciencia y tecnoloǵías. </p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
  commodo consequat.</p>
 	</div>
-	<div class="dedicacion">
+	<div class="box">
 		<h2>¿A qué me dedico?</h2>
 		<p>Me dedico a brindar soluciones a herramientas de índole informática.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	</div>
-	<div class="historia">
+	<div class="box">
 		<h2>Historia</h2>
 		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse 
  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
  sunt in culpa qui officia deserunt mollit anim id est laborum.
 </p>
 	</div>
-	<div id="especialidades">
+	<div id="especialidades" class="box">
 		<h2>Especialidades</h2>
 		<ul>
 			<li>Programación Estructurada ( C, C++, Python )</li>
@@ -60,11 +59,11 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 			<li>Manejo de control de versiones Git</li>
 		</ul>
 	</div>
-	<div class="desafios">
+	<div class="box">
 		<h2>Desafíos</h2>
 		<p>Resolver las problemáticas implicadas en materia de seguridad, mediante el uso de herramientas informáticas.</p>
 	</div>
-	<div id="solucion">
+	<div id="solucion" class="box">
 		<h2>Creando repositorio remoto</h2>
 		<p>Se accederá a la página de Github (o cualquier otra donde pueda guardar sus repositorios.</p>
 		<p>Una vez creado el repositorio, abrirá la terminal (o lo que corresponda, dependiendo su sistema operativo), y escribirá lo siguiente:</p>
@@ -95,9 +94,26 @@ ayuda: Vea 'Notes about fast-forwards0 en 'git push --help' para detalles.
 			<code>git push origin +HEAD</code>
 		</div>
 	</div>
-	<div class="contacto">
+	<div class="box" id="sublime">
+		<h2>Problemas para iniciar Color Picker en Sublime 3</h2>
+		<p>Color Picker es un plugin bastante útil en Sublime 3, pues permite obtener el código hexadecimal del color deseado, haciendo "ctrl" + "shift" + "c"</p>
+		<p>En sistemas operativos como GNU/Linux, puede ocurrir que el mismo no funcione, puesto a que no se han instalado las dependencias necesarias.</p>
+		<p>Para hacerlo, se deberá abrir la terminal y escribir lo siguiente:</p>
+		<div class="codigo">
+			<code>
+				sudo apt-get install python-gtk2
+			</code>
+		</div>
+		<p>Una vez instalado los paquetes, se deberá reiniciar Sublime Text, y este ýa funcionará.</p>
+		<p>En casos más extremos, se requerirá hacer lo siguiente:</p>
+		<div class="codigo">
+			<code>sudo apt-get install libgtk2.0-dev</code>
+		</div>
+	</div>
+
+	<div class="footer" id="contacto">
 		<h2>¿Cómo contactarme?</h2>
-		<p>Puede encontrarme haciendo click en el siguiente enlace:<a href="#">kevinvasquezmail</a></p>
+		<p>Puede encontrarme haciendo click en el siguiente enlace: <a href="#">kevinvasquezmail</a></p>
 	</div>
 
 </body>
