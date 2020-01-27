@@ -7,6 +7,26 @@ body {
 	color: #ACBBBE;
 }
 
+a:link {
+	color: #ACBBBE;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:visited {
+	color: Blue;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+}
+a:active{
+	color:yellow;
+	background-color: transparent;
+	text-decoration: underline;
+}
 .header {
 	font-size: 35px; 
 	text-align: center;
@@ -63,7 +83,7 @@ body {
 	padding: 30px;
 	border-radius: 23px;
 }
-.especialidades {
+#especialidades {
 	width: 100%;
 	background-color: #3C3450;
 	padding: 30px;
@@ -71,7 +91,7 @@ body {
 	float: left;
 	margin: 10px;
 }
-.solucion {
+#solucion {
 	float: left;
 	background-color: #3C3450;
 	width: 100%;
@@ -92,4 +112,10 @@ body {
 	border-radius: 23px;
 	padding: 30px;
 	margin: 10px;
+}
+
+@media only screen and (max-width: 800px){
+	.header, .contacto, .codigo, #solucion, #especialidades, .desafios {
+		width: 100%;
+	}
 }
