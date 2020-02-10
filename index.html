@@ -28,6 +28,9 @@
 			<li><a href="#solucion">Creando repositorio remoto</a></li>
 			<li><a href="#sublime">Color Picker no abre en Linux</a></li>
 			<li><a href="#hosting">Hosting de proyecto con Github Web</a></li>
+			<li>
+				<a href="kivy_problema">"Unable to Get a Window" Kivy Resuelto</a>
+			</li>
 			<li><a href="#contacto">¿Cómo contactarme?</a></li>
 		</ul>
 	</div>
@@ -130,6 +133,23 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 		<p>En mi caso es:</p>
 		<code>kaibakev1984.github.io/kevinweb</code>
 	</div>
+	<div class="box" id="kivy_problema">
+		<h2>Problemas para correr Kivy</h2>
+		<p>Una de las dificultades presentadas, al momento de correr un framework como lo es Kivy, es el error que se muestra a continuación: </p>
+
+		<div class="codigo">
+			<code>
+				[CRITICAL] App: Unable to get a Window, abort.
+			</code>
+		</div>
+		<p>Ésto puede deberse a dependencias no instaladas, como también problemas con la versión instalada de python (poco probable en la mayoría de los casos.</p>
+		<p>Para resolver dicho problema, abrimos la terminal, e ingresamos lo siguiente: </p>
+		<div class="codigo">
+			<code>sudo apt-get install libsdl2-2.0-0 libsdl2-image-2.0-0 libsdl2-mixer-2.0-0 libsdl2-ttf-2.0-0
+</code>
+		</div>
+	</div>
+	<p>Una vez ingresado, presionamos Enter, y dejamos que las dependencias se instalen. Finalmente veremos que dicho problema no vuelve a aparecer.</p>
 	<div class="footer" id="contacto">
 		<h2>¿Cómo contactarme?</h2>
 		<p>Puede encontrarme haciendo click en el siguiente enlace: <a href="#">kevinvasquezmail</a></p>
