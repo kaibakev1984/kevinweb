@@ -31,6 +31,9 @@
 			<li>
 				<a href="#kivy_problema">"Unable to Get a Window" Kivy Resuelto</a>
 			</li>
+			<li>
+				<a href="#feh_i3_set_wallpaper">Agregar Wallpaper con Feh e i3</a>
+			</li>
 			<li><a href="#contacto">¿Cómo contactarme?</a></li>
 		</ul>
 	</div>
@@ -150,6 +153,45 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 		</div>
 	<p>Una vez ingresado, presionamos Enter, y dejamos que las dependencias se instalen. Finalmente veremos que dicho problema no vuelve a aparecer.</p>
 	</div>
+	<div class="box" id="feh_i3_set_wallpaper">
+		<p>Desde el momento que supe de la existencia de i3, una emoción sobre humana recorrió todo mi ser</p>
+		<p>En principio, no deja de ser otro 'entorno de escritorio'. Mis conocimientos en informática no son muy pulidos</p>
+		<p>De todas formas, la emoción pudo más, y terminé instalando "i3" mediante la siguiente línea:</p>
+		<div class="codigo">
+			<code>sudo apt-get install i3</code>
+		</div>
+		<p>Tan fácil para instalarlo, no podía decir lo mismo para la personalización. El medio para cambiarlo se encuentra en ~/.config/i3/config.</p>
+		<p>Como la imagen de fondo no depende exclusivamente de "i3", se requiere de un recurso externo conocido como "Feh".</p>
+		<p>Algunas distros Linux vienen con dicho recurso instalado por defecto. Para poder setear la imagen, solo basta con escribir la siguiente línea:</p>
+		<div class="codigo">
+			<code>
+				feh --bg-fill ~/Pictures/"Mi Imagen.jpg"
+			</code>
+		</div>
+		<p>El principal problema de esta vía, es que requiere ser activada al iniciar sesión. Un trabajo un tanto tedioso (no tanto en realidad si decidiste usar i3).</p>
+		<p>En cualquier caso, si lo que necesita es tener su fondo con la imagen cuando arranca, deberá tener en cuenta lo siguiente.</p>
+		<p>Al escribir el código anterior desde la terminal, se crea un ejecutable ".fehbg"</p>
+		<p>Al ejecutar dicho código desde la terminal, verá que que la imagen de fondo, es la elegida al ejecutar la línea anterior.</p>
+		<p>Lo que nos indica, que en dicho ejecutable, queda almacenada la elección hecha por el usuario, al ejecutar "feh" desde la terminal.</p>
+		<p>Para que dicho ejecutable se cargue con el arranque, deberá hacer lo siguiente:</p>
+		<h4>Paso 1</h4>
+		<p>Escriba lo siguiente desde la terminal:</p>
+		<div class="codigo">
+			<code>cd ~/.config/i3</code>
+		</div>
+		<h4>Paso 2</h4>
+		<p>Una vez dentro, abra el archivo con su editor de texto favorito. En mi caso usaré "vim":</p>
+		<div class="codigo">
+			<code>vim config</code>
+		</div>
+		<h4>Paso 3</h4>
+		<p>Vaya a la última línea del archivo, y escriba lo siguiente:</p> 
+		<div class="codigo">
+			<code>exec --no-startup-id exec bash $HOME/.fehbg</code>
+		</div>
+		<p>Con esto hecho, cada vez que inicie el equipo, tendrá el fondo de pantalla que usted quiera.</p>
+	</div>
+
 	<div class="footer" id="contacto">
 		<h2>¿Cómo contactarme?</h2>
 		<p>Puede encontrarme haciendo click en el siguiente enlace: <a href="#">kevinvasquezmail</a></p>
